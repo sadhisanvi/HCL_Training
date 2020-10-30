@@ -1,17 +1,16 @@
 package lab_assignment4.q7;
 
 import java.io.IOException;
-import java.util.Scanner;
+
+import lab_assignment4.q6.InputException;
 
 public class Tester {
 
-	public static void throwException() throws InputException, IOException {
-
-	}
-
 	public static void main(String[] args) {
-		try(Scanner obj = new Scanner(System.in)) {
-			throwException();
+
+		DemoException exception = new DemoException();
+		try {
+			exception.throwException();
 		} catch (InputException e) {
 			System.out.println(e);
 		} catch (IOException e) {
