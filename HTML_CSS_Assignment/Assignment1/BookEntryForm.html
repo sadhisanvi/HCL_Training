@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Book Entry Form</title>
+<link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+	<header>
+		<h3>
+			<b>BOOK ENTRY FORM</b>
+		</h3>
+	</header><br>
+
+	<form action="#" id="bookForm" method="Post">
+
+		<table class="bookTable">
+
+			<tr>
+				<td><label for="isbnId">ISBN number: </label></td>
+				<td><input type="number" id="isbnId" name="isbn" maxlength="15"></td>
+				<td><label id="isbnMsg"></label></td>
+			</tr>
+
+			<tr>
+				<td><label for="titleId">Book title: </label></td>
+				<td><input type="text" id="titleId" name="title"></td>
+				<td><label id="titleMsg"></label></td>
+			</tr>
+
+			<tr>
+				<td><label for="priceId">Price: </label></td>
+				<td><input type="text" id="priceId" name="price"></td>
+			</tr>
+
+			<tr>
+				<td><label for="dateId">Published Date: </label></td>
+				<td><input type="date" id="dateId" name="date"></td>
+			</tr>
+
+			<tr>
+				<td><label for="bookId">Book Type: </label></td>
+				<td><select name="book" id="bookId" required>
+						<option value="" disabled selected>select one option</option>
+						<option value="programming">Programming</option>
+						<option value="fictional">Fictional</option>
+						<option value="framework">Framework</option>
+				</select></td>
+			</tr>
+
+			<tr>
+				<td><label for="copiesId">Number of copies: </label></td>
+				<td><input type="number" min="1" max="10" id="copiesId"
+					name="copies"></td>
+				<td><label id="copiesMsg"></label></td>
+			</tr>
+
+			<tr>
+				<td><label for="authorId">Author Name: </label></td>
+				<td><input type="text" id="authorId" name="author"></td>
+				<td><label id="authorMsg"></label></td>
+			</tr>
+
+			<tr>
+				<td><label for="authorAddressId">Author Address: </label></td>
+				<td><textarea name="authorAddress" id="authorAddressId"
+						cols="30" rows="10"></textarea></td>
+			</tr>
+
+			<tr>
+				<td><label for="publisherId">Publisher Name: </label></td>
+				<td><input type="text" id="publisherId" name="publisher"></td>
+				<td><label id="publisherMsg"></label></td>
+			</tr>
+
+			<tr>
+				<td><label for="publisherAddressId">Publisher Address:</label></td>
+				<td><textarea name="publisherAddress" id="publisherAddressId"
+						cols="30" rows="10"></textarea></td>
+			</tr>
+			
+
+			<tr id="submitId">
+				<td><input style="margin-left:180px;width:100px;height:35px;" type="submit" value="add data"
+					onclick="return validateBook()"></td>
+			</tr>
+		</table>
+
+	</form>
+</body>
+</html>

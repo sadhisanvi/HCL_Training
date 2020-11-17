@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="scripts/registrationform.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/registration.css">
+</head>
+<body>
+
+    <header><h2>Registration Form</h2></header>
+    
+    <form action="#" method="GET">
+        <table>
+            <tr>
+                <td>
+                    Enter Name: 
+                </td>
+                <td>
+                    <input type="text" name="name" id="nameId">
+                </td>
+                <td>
+                    <label id="nameMsg"></label>
+                </td>
+            </tr>
+
+            
+            <tr>
+                <td>
+                    Enter PhoneNumber: 
+                </td>
+                <td>
+                    <input type="number" name="phoneNumber" id="phoneNumberId">
+                </td>
+                <td>
+                    <label id="phoneNumberMsg"></label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Enter Address:
+                </td>
+                <td>
+                    <textarea name="address" id="addressId" cols="30" rows="10" required></textarea>
+                </td>
+                <td>
+                    <label id="addressMsg"></label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Enter Gender:
+                </td>
+  
+                <td>
+                    <input type="radio" name="gender" id="genderId" required>
+                
+                
+                    <label for="male">Male</label>
+                
+                    <input type="radio" id="female" name="gender" value="female">
+                
+                    <label for="female">Female</label>
+                
+                    <input type="radio" id="other" name="gender" value="other">
+                
+                    <label for="other">Other</label>
+                </td>
+            </tr>
+            
+
+            <tr>
+                <td><label for="qualification">Qualification: </label></td>
+                <td><select name="qualification" id="qualificationId" required>
+                    <option value="" disabled selected>select one option</option>
+                    <option value="UG">UG</option>
+                    <option value="PG">PG</option>
+                </select></td>
+            </tr>
+
+            <tr>
+                <td>DOB:</td> 
+                <td>
+                    <input type="date" name="dob" id="dobId" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Relation with some hcl employee:</td>
+                <td>
+                    <input type="radio" id="yes" name="relation" value="yes" onclick="return enabled()">
+                    <label for="female">Yes</label>
+                    
+                    <input type="radio" id="no" name="relation" value="no" onclick="return enabled()">
+                    <label for="female">No</label>
+
+                </td>
+            </tr>
+
+            <tr class="visible">
+                <td>Enter Employee Id:</td>
+                <td><input type="text" name="employee" id="employeeId"></td>
+            </tr>
+
+            <tr>
+                <td>Course: </td>
+                <td>
+                    <input type="text" name="course" id="courseId">
+                </td>
+                <td>
+                    <label id="courseMsg"></label>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <input style="margin-left:180px;width:100px;height:35px;" type="submit" value="submit" onclick="return valid()">
+                </td>
+            </tr>
+        </table>
+        
+    </form>
+</body>
+</html>

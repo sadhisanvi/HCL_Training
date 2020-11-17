@@ -1,0 +1,25 @@
+@charset "ISO-8859-1";
+
+header {
+    color: black;
+    font-size: 35px;
+    text-align: center;
+}
+
+.bookTable {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input, textarea, select {
+
+    width: 200px;
+    padding: 12px;
+    border: 1px solid black;
+    
+}
+
+input[type="submit"]:hover {
+    background-color: black;
+    color: white;
+}
